@@ -8,6 +8,15 @@
   &__medium{
     max-width: 976px;
   }
+  &__no-padding-untill-medium{
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  @mixin atMedium{
+    padding-left: 18px;
+    padding-right: 18px;
+  }
 
   .wrapper{
     padding-left: 0;

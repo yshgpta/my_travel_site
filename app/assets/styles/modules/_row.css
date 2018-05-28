@@ -3,12 +3,20 @@
 
    @mixin clearfix;
 
+   &__t-padding{
+     padding-top: 80px;
+   }
+
    &__gutters{
      margin-right: -65px;
    }
 
    &__gutters-large{
      margin-right: -100px;
+   }
+
+   &__gutters-small{
+     margin-right: -45px;
    }
    &__gutters-large > div{
      padding-right: 100px;
@@ -17,6 +25,11 @@
    &__gutters > div{
      padding-right: 65px;
    }
+
+   &__gutters-small > div{
+     padding-right: 45px;
+   }
+
    &__b-margin-untill-medium{
      margin-bottom: 1rem;
    }
@@ -48,6 +61,16 @@
    &__medium-8--smaller{
      width: 63%;
    }
+   }
+   &__equal-height-at-medium{
+     @mixin atMedium{
+       display: flex;
+     }
+
+     & > div{
+       float: none;
+       display: flex;
+     }
    }
 
 }

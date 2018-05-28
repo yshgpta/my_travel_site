@@ -5,8 +5,26 @@
     padding: 4.5rem 0;
   }
 
+  &__no-b-padding-untill-medium{
+    padding-bottom: 0;
+
+    @mixin atMedium{
+      padding-bottom: 4.5rem;
+    }
+  }
+
   &__blue{
     background-color: $mainBlue;
     color: white;
+  }
+
+  &__testimonial{
+    background-color: #e0e6ef;
+
+    @mixin atMedium{
+      background: url("/assets/images/testimonials-bg.jpg") top center no-repeat;
+      background-size: cover;
+    }
+
   }
 }
