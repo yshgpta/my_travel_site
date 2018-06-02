@@ -8,6 +8,11 @@
   &__medium{
     max-width: 976px;
   }
+
+  &__narrow{
+    max-width: 470px;
+  }
+
   &__no-padding-untill-medium{
     padding-left: 0;
     padding-right: 0;
