@@ -5,13 +5,14 @@
      display:inline-block;
      background-color: $mainOrange;
      margin: 0 5px 5px 5px;
-     width: 33%;
-     height: 72px;
+     width: 15%;
+     height: 40px;
      position: relative;
 
      @mixin atSmall{
        width: 72px;
        margin: 0 5px;
+       height: 72px;
      }
    }
    .icon{

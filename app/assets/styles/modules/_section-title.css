@@ -7,6 +7,14 @@
     font-size: 3.75rem;
   }
 
+  &__small-fonts{
+    font-size: 1.65rem;
+
+    @mixin atSmall{
+      font-size: 2.55rem;
+    }
+  }
+
   strong{
     font-weight: 500;
   }

@@ -19,13 +19,16 @@
 
   &__description{
     text-align: center;
-    font-size: 1rem;
+    font-size: .8rem;
     font-weight: 300;
+    max-width: 250px;
+    margin: 5px auto;
 
     @mixin atSmall{
       font-size: 1.5rem;
       font-weight: 300;
       line-height: 1.65;
+      max-width: 100%
     }
   }
   &__close{
@@ -57,8 +60,12 @@
   &__maker-name{
     display: block;
     opacity: 1;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     margin: 10px 0;
+
+    @mixin atSmall{
+      font-size: 1.5rem;
+    }
   }
   &__site-maker{
     display: block;
