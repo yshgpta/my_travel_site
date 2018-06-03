@@ -1281,9 +1281,17 @@ a{
 
 .modal__description{
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 300;
-    line-height: 1.65;
+  }
+
+@media(min-width: 530px){
+
+.modal__description{
+      font-size: 1.5rem;
+      font-weight: 300;
+      line-height: 1.65
+  }
   }
 
 .modal__close{
@@ -1306,9 +1314,41 @@ a{
 .modal__inner{
     position: absolute;
     width: 100%;
-    top: 50%;
-    -webkit-transform: translate(0,-50%);
-            transform: translate(0,-50%);
+    top: 0;
+  }
+
+@media(min-width: 530px){
+
+.modal__inner{
+      top: 50%;
+      -webkit-transform: translate(0,-50%);
+              transform: translate(0,-50%)
+  }
+  }
+
+.modal__maker-name{
+    display: block;
+    opacity: 1;
+    font-size: 1.5rem;
+    margin: 10px 0;
+  }
+
+.modal__site-maker{
+    display: block;
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    border-radius: 125.5px;
+  }
+
+@media(min-width: 530px){
+
+.modal__site-maker{
+      width: 250px;
+      height: 250px;
+      border-radius: 173px
+  }
   }
 
 .social-icons{

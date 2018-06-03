@@ -19,9 +19,14 @@
 
   &__description{
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 300;
-    line-height: 1.65;
+
+    @mixin atSmall{
+      font-size: 1.5rem;
+      font-weight: 300;
+      line-height: 1.65;
+    }
   }
   &__close{
     position: absolute;
@@ -41,7 +46,32 @@
   &__inner{
     position: absolute;
     width: 100%;
-    top: 50%;
-    transform: translate(0,-50%);
+    top: 0;
+
+    @mixin atSmall{
+      top: 50%;
+      transform: translate(0,-50%);
+    }
+  }
+
+  &__maker-name{
+    display: block;
+    opacity: 1;
+    font-size: 1.5rem;
+    margin: 10px 0;
+  }
+  &__site-maker{
+    display: block;
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    border-radius: 125.5px;
+
+    @mixin atSmall{
+      width: 250px;
+      height: 250px;
+      border-radius: 173px;
+    }
   }
 }
